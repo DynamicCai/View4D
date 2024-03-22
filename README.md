@@ -26,7 +26,7 @@ View4D软件是一个高度集成化的数据分析/管理软件。用户可以�
 ### 导抗谱反演计算连续松弛时间分布（DRT）工具
 使用岭回归正则化方法求解导抗谱对应的松弛时间分布谱图。
 
-![screenshot](images/DRTtool.JPG =60)
+![screenshot](images/DRTtool.JPG)
 
 ## 环境要求
 View4D目前仍在开发测试中，尚无提供exe安装文件。因此，您需要配置python运行环境使用：
