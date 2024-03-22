@@ -19,6 +19,8 @@ View4D软件是一个高度集成化的数据分析/管理软件。用户可以�
 
 ![screenshot](images/transform.jpg)
 
+KWW方程转换示例：
+
 ![screenshot](images/KWWt.png)
 
 ![screenshot](images/KWWfreq.png)
@@ -28,6 +30,17 @@ View4D软件是一个高度集成化的数据分析/管理软件。用户可以�
 
 ![screenshot](images/DRTtool.JPG)
 
+![screenshot](images/gamma.JPG)
+
 ## 环境要求
 View4D目前仍在开发测试中，尚无提供exe安装文件。因此，您需要配置python运行环境使用：
 
+- Python 3.11.4
+- numpy 1.25.2
+- scipy 1.11.1
+- lmfit 1.2.2
+- cvxopt 1.3.2
+- PySide6 6.5.2
+- pyqtgraph 0.13.3
+
+注意PySide6使用6.5.2以上的版本可能会有运行上的错误。其他的运行库用最新的版本应该都可以。
