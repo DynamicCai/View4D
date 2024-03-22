@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>250</width>
+    <height>234</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>FIDRT</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="styleSheet">
+      <string notr="true">QGroupBox
+{
+border: 1px solid black;
+}</string>
+     </property>
+     <property name="title">
+      <string/>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="QLabel" name="label_8">
+        <property name="text">
+         <string>Tranformation by Intermediate DRT</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="font">
+         <font>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Data Type</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="data_type">
+        <property name="editable">
+         <bool>false</bool>
+        </property>
+        <item>
+         <property name="text">
+          <string>Dielectric Permittivity</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Impedance</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Electric Modulus</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Admitance</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="data_used">
+        <item>
+         <property name="text">
+          <string>Temporal Data</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Complex Frequency Data</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Real Part Frequency Data</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Imaginary Part Frequency Data</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_2">
+        <property name="font">
+         <font>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Data Used</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="mark_data">
+        <property name="text">
+         <string>Import Data</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_show">
+        <property name="text">
+         <string>------</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="transformButton">
+        <property name="text">
+         <string>Transform</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

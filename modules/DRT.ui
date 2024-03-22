@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>388</width>
+    <height>348</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>compute DRT</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QGroupBox" name="groupBox">
+     <property name="styleSheet">
+      <string notr="true">QGroupBox
+{
+border: 1px solid black;
+}</string>
+     </property>
+     <property name="title">
+      <string/>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QLabel" name="label_8">
+        <property name="text">
+         <string>Data Options</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="font">
+         <font>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Data Type</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="data_type">
+        <property name="editable">
+         <bool>false</bool>
+        </property>
+        <item>
+         <property name="text">
+          <string>Impedance</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Dielectric Permittivity</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Electric Modulus</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Admitance</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_2">
+        <property name="font">
+         <font>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Data Used</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="data_used">
+        <item>
+         <property name="text">
+          <string>Complex Data</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Real Part Data</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Imaginary Part Data</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="mark_data">
+        <property name="text">
+         <string>New Data</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="current_data">
+        <property name="text">
+         <string>Current Data</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_show">
+        <property name="text">
+         <string>------</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_4">
+        <property name="font">
+         <font>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Fitting with Artifact</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="ind_cap">
+        <item>
+         <property name="text">
+          <string>n=0</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>n=1; j</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>n=-1; j</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>n=2</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>n=-2</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_9">
+        <property name="font">
+         <font>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Removes Negatives</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="removeButton">
+        <property name="text">
+         <string>Remove</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="0" column="1">
+    <widget class="QGroupBox" name="groupBox_2">
+     <property name="styleSheet">
+      <string notr="true">QGroupBox
+{
+border: 1px solid black
+}</string>
+     </property>
+     <property name="title">
+      <string/>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="QLabel" name="label_12">
+        <property name="text">
+         <string>Method Settings</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_3">
+        <property name="font">
+         <font>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Discretization Method</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="discre_method">
+        <item>
+         <property name="text">
+          <string>Guassian</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Piecewise Linear</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_6">
+        <property name="font">
+         <font>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Regularization Parameter</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="reg_par">
+        <property name="text">
+         <string>0.001</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_7">
+        <property name="font">
+         <font>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Regularization Derivatives</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="reg_deriv">
+        <item>
+         <property name="text">
+          <string>1st order</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>2nd order</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_11">
+        <property name="font">
+         <font>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>RBF Shape Control</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="rbf_shape">
+        <item>
+         <property name="text">
+          <string>FWHM Coefficient</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>Shape Factor</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_10">
+        <property name="font">
+         <font>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Shape Coefficient</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="coeff_edit">
+        <property name="text">
+         <string>0.5</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="simple_run">
+        <property name="text">
+         <string>Simple Run</string>
+        </property>
+        <property name="checkable">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
