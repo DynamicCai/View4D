@@ -12,7 +12,7 @@ View4D软件是一个高度集成化的数据分析/管理软件。用户可以�
 
 ![screenshot](images/View4D_imag.jpg)
 
-![screenshot](images/fit.jpg, width=60)
+![screenshot](images/fit.jpg width=60)
 
 ### 时域/频域数据的高效相互转换工具（以松弛时间分布为媒介）
 使用离散傅里叶变换相在对跨越多个数量级的谱图数据进行时域/频域转换上非常笨重。View4D软件内置TIDRT工具可以实现对谱图的时域/频域数据进行高效的点对点转换，转换过程依托于松弛时间分布（DRT）的计算。
