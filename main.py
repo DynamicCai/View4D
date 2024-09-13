@@ -1328,7 +1328,7 @@ class ParameterModel(QAbstractItemModel):
         
         return None
     
-    def itemData(self, index: QModelIndex | QPersistentModelIndex) -> Dict[int, Any]:
+    def itemData(self, index) -> Dict[int, Any]:
         return super().itemData(index)
 
     def setData(self, index: QModelIndex, value: Any, role: Qt.ItemDataRole):
